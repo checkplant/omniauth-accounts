@@ -6,7 +6,7 @@ module OmniAuth
       option :name, :sso
 
       option :client_options, {
-        site: "https://www.farmbox.cc"
+        site: "http://localhost:5000"
       }
 
       uid { raw_info['_id']['$oid'] }
