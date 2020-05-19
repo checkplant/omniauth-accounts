@@ -1,1 +1,1 @@
-require 'omniauth/strategies/farmbox'
+require 'omniauth/strategies/sso'

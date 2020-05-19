@@ -23,7 +23,7 @@ Or install it yourself as:
 ```ruby
 # In Rails, you could put this in config/initializers/omniauth.rb
 Rails.application.config.middleware.use OmniAuth::Builder do
-  provider :farmbox, farmbox_CLIENT_ID, farmbox_CLIENT_SECRET, {:scope => SCOPES}
+  provider :sso, sso_CLIENT_ID, sso_CLIENT_SECRET, {:scope => SCOPES}
 end
 ```
 
