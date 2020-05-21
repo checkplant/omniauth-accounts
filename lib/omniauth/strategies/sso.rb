@@ -9,7 +9,7 @@ module OmniAuth
         site: "http://localhost:5000"
       }
 
-      uuid { raw_info['uuid'] }
+      uid { raw_info['uuid'] }
 
       info do
         {
