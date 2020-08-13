@@ -1,6 +1,6 @@
-RSpec.describe Omniauth::Sso do
+RSpec.describe Omniauth::Accounts do
   it "has a version number" do
-    expect(Omniauth::Sso::VERSION).not_to be nil
+    expect(Omniauth::Accounts::VERSION).not_to be nil
   end
 
   it "does something useful" do

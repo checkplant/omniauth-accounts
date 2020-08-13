@@ -2,16 +2,16 @@
 
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "omniauth/sso/version"
+require "omniauth/accounts/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "omniauth-sso"
-  spec.version       = Omniauth::Sso::VERSION
+  spec.name          = "omniauth-accounts"
+  spec.version       = Omniauth::Accounts::VERSION
   spec.authors       = ["Robson"]
   spec.email         = ["robson@checkplant.com.br"]
 
-  spec.summary       = %q{Checkplant SSO Omniauth2}
-  spec.description   = %q{Checkplant SSO Omniauth2}
+  spec.summary       = %q{Checkplant ACCOUNTS Omniauth2}
+  spec.description   = %q{Checkplant ACCOUNTS Omniauth2}
   # spec.homepage      = "TODO: Put your gem's website or public repo URL here."
 
   spec.files         = `git ls-files -z`.split("\x0").reject do |f|

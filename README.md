@@ -1,13 +1,13 @@
-# Omniauth::Sso
+# Omniauth::Accounts
 
-Checkplant SSO Omniauth2
+Checkplant Accounts Omniauth2
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'omniauth-sso'
+gem 'omniauth-accounts'
 ```
 
 And then execute:
@@ -16,14 +16,14 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install omniauth-sso
+    $ gem install omniauth-accounts
 
 ## Configuration
 
 ```ruby
 # In Rails, you could put this in config/initializers/omniauth.rb
 Rails.application.config.middleware.use OmniAuth::Builder do
-  provider :sso, sso_CLIENT_ID, sso_CLIENT_SECRET, {:scope => SCOPES}
+  provider :accounts, accounts_CLIENT_ID, accounts_CLIENT_SECRET, {:scope => SCOPES}
 end
 ```
 
@@ -33,4 +33,4 @@ TODO: Write usage instructions here
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/robson-checkplant/omniauth-sso.
+Bug reports and pull requests are welcome on GitHub at https://github.com/robson-checkplant/omniauth-accounts.

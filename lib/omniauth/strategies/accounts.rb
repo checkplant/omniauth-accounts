@@ -2,8 +2,8 @@ require 'omniauth-oauth2'
 
 module OmniAuth
   module Strategies
-    class Sso < OmniAuth::Strategies::OAuth2
-      option :name, :sso
+    class Accounts < OmniAuth::Strategies::OAuth2
+      option :name, :accounts
 
       option :client_options, {
         site: "http://localhost:5000"
