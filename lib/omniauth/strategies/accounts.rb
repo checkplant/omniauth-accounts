@@ -6,7 +6,7 @@ module OmniAuth
       option :name, :accounts
 
       option :client_options, {
-        site: "https://accountstest.farmbox.cc"
+        site: "https://accounts.farmbox.cc"
       }
 
       uid { raw_info['uuid'] }
