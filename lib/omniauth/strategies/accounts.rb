@@ -6,7 +6,7 @@ module OmniAuth
       option :name, :accounts
 
       option :client_options, {
-        site: "http://localhost"
+        site: Rails.env.production? ? "https://accounts.farmbox.cc" : "https://accountstest.farmbox.cc"
       }
 
       uid { raw_info['uuid'] }
