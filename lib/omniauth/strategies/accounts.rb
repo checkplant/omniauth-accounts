@@ -27,6 +27,20 @@ module OmniAuth
       def raw_info
         @raw_info ||= access_token.get("/api/v1/me").parsed
       end
+
+      # You can pass params to the auth request, if you need to set them dynamically.
+      # You can also set these options in the OmniAuth config :authorize_params option.
+      #
+      # For example: /auth/accounts?sign_up=true
+      def authorize_params
+        super.tap do |params|
+          %w[sign_up].each do |v|
+            if request.params[v]
+              params[v.to_sym] = request.params[v]
+            end
+          end
+        end
+      end
     end
   end
 end
